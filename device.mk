@@ -452,6 +452,8 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_PACKAGES += \
+    usb_compositions.conf \
+    android.hardware.usb.gadget@1.2-service-qti \
     android.hardware.usb@1.3-service.dual_role_usb
 
 PRODUCT_PACKAGES += \
