@@ -34,6 +34,9 @@ PRODUCT_FULL_TREBLE := true
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
+# GCAMGO
+$(call inherit-product, vendor/gcgop/config.mk)
+
 # ANT+
 PRODUCT_PACKAGES += \
     AntHalService-Soong \
