@@ -23,6 +23,14 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# Platform
+MSMSTEPPE := sm6150
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
+
+# Treble flag
+PRODUCT_PRODUCT_VNDK_VERSION := current
+PRODUCT_FULL_TREBLE := true
+
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
@@ -332,7 +340,7 @@ PRODUCT_COPY_FILES += \
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-lineage
+    $(LOCAL_PATH)/overlay-yaap
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
