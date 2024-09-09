@@ -159,6 +159,7 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
 # DRM
 PRODUCT_PACKAGES += \
+    libcrypto-v33 \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
 
