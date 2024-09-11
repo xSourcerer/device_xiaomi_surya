@@ -27,7 +27,7 @@ PRODUCT_COPY_FILES += \
 $(call inherit-product-if-exists, vendor/xiaomi/miuicamera/MiuiCamera.mk)
 
 # BCR
-$(call inherit-product, vendor/bcr/bcr.mk)
+#$(call inherit-product, vendor/bcr/bcr.mk)
 
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
