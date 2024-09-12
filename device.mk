@@ -23,6 +23,9 @@ $(call inherit-product, hardware/qcom-caf/common/common.mk)
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
 
+# MiuiCamera
+$(call inherit-product-if-exists, device/xiaomi/surya-miuicamera/config.mk)
+
 # XiaomiParts
 $(call inherit-product, device/xiaomi/surya/parts/parts.mk)
 
